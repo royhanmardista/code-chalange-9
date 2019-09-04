@@ -4,11 +4,9 @@ function angkaPalindrome(angka) {
         return angka + 1;
     } else {
         while (true) {
-            angka += 1;
-            angka = String(angka);            
-            var palindrom = angka.split("").reverse().join(""); 
-            palindrom = Number(palindrom);
-            angka = Number(angka);           
+            angka += 1;                      
+            var palindrom = String(angka).split("").reverse().join(""); 
+            palindrom = Number(palindrom);        
             if (angka === palindrom) {
                 return palindrom;
             }
