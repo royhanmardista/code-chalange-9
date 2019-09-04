@@ -1,9 +1,6 @@
 function palindrome (kata) {
     /**fungsi ini akan mengembalikan true jika kata berupa polindrom */
-    var newKata = "";
-    for (var i = kata.length-1; i >= 0; i--) {
-        newKata += kata[i]
-    }
+    var newKata = kata.split("").reverse().join("")
     return newKata === kata;
 }
 
