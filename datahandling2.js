@@ -18,11 +18,7 @@ function dataHandling2 (array) {
         case "12" : {console.log("Desember"); break;}
         default : {console.log("data yang anda masukkan salah silahkan ikuti aturan yang ada"); break;}
     }
-    var newTtl = [];    
-    for (var i = 0; i < ttl.length; i++) {
-        newTtl[i] = Number(ttl[i]);
-    }
-    console.log(newTtl.sort())
+    console.log(ttl.sort(function(value1, value2) { return value2 - value1 }))
     console.log(ttl.join("-"))
     console.log(array[1].slice(0,15))
 }
